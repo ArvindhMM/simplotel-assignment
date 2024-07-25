@@ -17,7 +17,8 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    width: 80vw;
+    min-width: 70vw;
+    max-width: 80vw;
     justify-content: space-around;
     font-family: 'Georgia', serif;
     font-size: clamp(0.7rem, 1.2vw, 1.2rem);
@@ -135,10 +136,11 @@ header div img {
         padding: 0 10px 0 10px;
     }
     nav ul li {
+        font-size: 9px;
         margin-right: 5px;
     }
     header div img {
-        height: 16px;
+        height: 12px;
         margin-right: 5px;
     }
     .page1-text{
@@ -157,13 +159,13 @@ header div img {
 
 @media screen and (max-width: 360px) {
     header {
-        padding: 0 5px 0 5px;
+        padding: 0 3px 0 3px;
     }
     .page1-text{
         width: 50vw;
     }
     nav ul li {
-        margin-right: 5px;
+        margin-right: 3px;
         font-size: smaller;
     }
     header div img {
